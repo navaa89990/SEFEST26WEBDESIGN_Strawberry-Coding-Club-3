@@ -1,0 +1,130 @@
+---
+import logoImg from '../assets/logo-removebg-preview.png';
+---
+<nav id="main-nav" class="flex items-center sticky top-0 z-50 justify-between px-12 py-6 bg-transparent">
+    <div class="text-2xl font-bold text-black flex items-center">
+        <img src={logoImg.src} alt="logo" class="w-18 h-18" >
+
+        <span class="bg-linear-to-r from-[#4b5d3f] to-[#a4b494] bg-clip-text text-transparent">
+            Chloro
+        </span>
+        <span class="text-[#353d31]">
+            Fy
+        </span>
+    </div>
+
+    <ul class="hidden lg:flex items-center gap-8 text-sm font-bold text-gray-600">
+        <li><a href="#home" class="hover:text-[#79af43] transition"><i class="fa-solid fa-house-chimney mr-2"></i>Home</a></li>
+        <li class="relative group cursor-pointer">
+            <div class="flex items-center gap-1 group-hover:text-[#79af43] transition text-sm font-bold">
+                <i class="fa-solid fa-microchip mr-1"></i><a href="#solutions">Solutions</a> 
+                <i class="fa-solid fa-chevron-down text-[10px] ml-1 transition-transform group-hover:rotate-180"></i>
+            </div>
+
+            <div class="absolute mt-2 left-0 w-60 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 translate-y-2 group-hover:translate-y-0">
+                <div class="bg-white border border-gray-100 rounded-2xl shadow-xl p-3">
+                    <a href="#smart-grid" class="flex items-start gap-3 px-4 py-3 hover:bg-[#f0f4ec] rounded-xl transition">
+                        <i class="fa-solid fa-bolt-lightning mt-1 text-[#a4b494]"></i>
+                        <div>
+                            <span class="block text-[#4b5d3f]">Smart Grid</span>
+                            <small class="text-gray-400 font-normal text-[11px]">Loncat Ke Fitur Energi</small>
+                        </div>
+                    </a>
+                    <a href="#bio-infra" class="flex items-start gap-3 px-4 py-3 hover:bg-[#f0f4ec] rounded-xl transition">
+                        <i class="fa-solid fa-seedling mt-1 text-[#a4b494]"></i>
+                        <div>
+                            <span class="block text-[#4b5d3f]">Bio Insfrastructure</span>
+                            <small class="text-gray-400 font-normal text-[11px]">Loncat Ke Fitur Material</small>
+                        </div>
+                    </a>
+                    <a href="#eco-transport" class="flex items-start gap-3 px-4 py-3 hover:bg-[#f0f4ec] rounded-xl transition">
+                        <i class="fa-solid fa-bicycle mt-1 text-[#a4b494]"></i>
+                        <div>
+                            <span class="block text-[#4b5d3f]">Eco Transport</span>
+                            <small class="text-gray-400 font-normal text-[11px]">Loncat Ke Fitur Transportasi</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </li>
+
+        <li><a href="#about" class="hover:text-[#79af43] transition"><i class="fa-solid fa-circle-info mr-2"></i>About</a></li>
+        <li><a href="#impact" class="hover:text-[#79af43] transition"><i class="fa-solid fa-chart-line mr-2"></i>Impact</a></li>
+        <li><a href="#faq" class="hover:text-[#79af43] transition"><i class="fa-solid fa-circle-question mr-2"></i>FAQ</a></li>
+    </ul>
+     
+    <div class="flex items-center gap-4">
+    <button class="hidden xl:block text-sm font-bold text-[#1a1c19] hover:text-[#a4b494] transition">
+        Sign In
+    </button>
+    <a href="#signin" class="bg-[#4b5d3f] hover:bg-[#a4b494] text-white px-6 py-3 rounded-full text-xs  font-black uppercase tracking-widest shadow-lg shadow-matcha/20 transition-all active:scale-95">
+    Join Us
+    </a>
+
+    <button id="menu-toggle" class="lg:hidden p-2 text-[#4b5d3f] hover:bg-[#f0f4ec] rounded-lg transition">
+        <i class="fa-solid fa-bars-staggered text-2xl"></i>
+    </button>
+    </div>
+
+    <div id="mobile-menu" class="fixed inset-0 bg-[#f8f9f7] z-60 translate-x-full transition-transform duration-500 lg:hidden flex flex-col">
+        <div class="flex justify-between items-center px-6 py-8 border-bottom border-gray-100">
+            <div class="flex items-center gap-1 font-extrabold text-2xl">
+                <span class="bg-linear-to-r from-[#4b5d3f] to-[#a4b494] bg-clip-text text-transparent">Chloro</span>
+                <span class="text-[#353d31]">Fy</span>
+            </div>
+            <button id="close-menu" class="w-12 h-12 flex items-center justify-center bg-white rounded-full shadow-sm text-[#4b5d3f]">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+
+        <div class="flex-1 overflow-y-auto px-6 py-4">
+            <p class="text-[10px] font-black uppercase tracking-[0.2em] text-gray-400 mb-6">Navigation</p>
+            <ul class="flex flex-col gap-6 text-2xl font-bold text-[#4b5d3f]">
+                <li><a href="#home" class="mobile-link flex items-center justify-between">Home <i class="fa-solid fa-arrow-right text-sm opacity-30"></i></a></li>
+                <li><a href="#smart-grid" class="mobile-link flex items-center justify-between text-gray-400">Smart Grid <i class="fa-solid fa-arrow-right text-sm opacity-30"></i></a></li>
+                <li><a href="#bio-infra" class="mobile-link flex items-center justify-between text-gray-400">Bio Infrastructure <i class="fa-solid fa-arrow-right text-sm opacity-30"></i></a></li>
+                <li><a href="#eco-transport" class="mobile-link flex items-center justify-between text-gray-400">Eco Transport <i class="fa-solid fa-arrow-right text-sm opacity-30"></i></a></li>
+                <li><a href="#about" class="mobile-link flex items-center justify-between" >About <i class="fa-solid fa-arrow-right text-sm opacity-30"></i></a></li>
+                <li><a href="#impact" class="mobile-link flex items-center justify-between">Impact <i class="fa-solid fa-arrow-right text-sm opacity-30"></i></a></li>
+                <li><a href="#faq" class="mobile-link flex items-center justify-between text-gray-400">FAQ <i class="fa-solid fa-arrow-right text-sm opacity-30"></i></a></li>
+            </ul>
+        </div>
+
+        <div class="p-6 bg-white border-t border-gray-100">
+            <a href="#signin" class="mobile-link block text-center bg-[#4b5d3f] text-white py-5 rounded-2xl font-bold shadow-xl shadow-matcha/20">
+            Get Started Now
+            </a>
+        </div>
+    </div>
+</nav>
+
+<script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const closeMenu = document.getElementById('close-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+    const nav = document.getElementById('main-nav');
+
+    menuToggle?.addEventListener('click', () => {
+        mobileMenu?.classList.remove('translate-x-full');
+        document.body.style.overflow = 'hidden';
+    })
+
+    const hidemenu = () => {
+        mobileMenu?.classList.add('translate-x-full');
+        document.body.style.overflow = 'auto';
+    }
+
+    closeMenu?.addEventListener('click', hidemenu);
+    mobileLinks.forEach(Link => Link.addEventListener('click', hidemenu));
+
+    window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      nav?.classList.add('nav-active', 'py-4');
+      nav?.classList.remove('py-6');
+    } else {
+      nav?.classList.remove('nav-active', 'py-4');
+      nav?.classList.add('py-6');
+    }
+  });
+</script>

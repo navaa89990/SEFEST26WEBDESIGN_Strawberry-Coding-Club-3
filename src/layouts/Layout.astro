@@ -1,0 +1,25 @@
+---
+interface Props {
+	title: string;
+}
+const { title } = Astro.props;
+---
+<!doctype html>
+<html lang="id" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+		<title>{title}</title>
+	</head>
+	<body class="bg-[#c7d3e9] text-white font-['Plus_Jakarta_Sans'] antialiased relative overflow-x-hidden">
+    <div class="fixed top-0 left-1/2 -translate-x-1/2 w-full h-full z-[-1] pointer-events-none">
+        <div class="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-[#D4FF00]/5 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[10%] right-[-5%] w-[30%] h-[30%] bg-blue-500/5 blur-[100px] rounded-full"></div>
+    </div>
+    <slot />
+	
+</body>
+</html>
+
