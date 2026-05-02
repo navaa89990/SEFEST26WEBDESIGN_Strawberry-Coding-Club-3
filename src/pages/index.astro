@@ -4,18 +4,31 @@ import Navbar from '../components/Navbar.astro';
 import Hero from '../components/Hero.astro';
 import Solution from '../components/Solution.astro';
 import About from '../components/About.astro';
-import Impact from '../components/Impact.astro';
 import Faq from '../components/Faq.astro';
 import Footer from '../components/Footer.astro';
 import "../styles/global.css";
 ---
 
-<Layout title="ChloroFy">
+<Layout title="ChloroFy | Bio-Infrastructure of the Future">
 	<Navbar />
 	<Hero />
 	<Solution />
 	<About />
-	<Impact />
 	<Faq />
 	<Footer />
 </Layout>
+
+<script>
+	import AOS from 'aos';
+	import 'aos/dist/aos.css';
+
+	const initAOS = () => {
+		AOS.init({
+			duration: 1000,
+			once: false,
+			easing: 'ease-out-cubic',
+		});
+	};
+	initAOS();
+	document.addEventListener('astro:page-load', initAOS);
+</script>

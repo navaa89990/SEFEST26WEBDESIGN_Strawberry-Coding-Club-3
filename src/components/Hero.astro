@@ -1,59 +1,52 @@
-<section id="home" class="relative min-h-[90vh] flex items-center pt-10 overflow-hidden">
-    <div class="container mx-auto px-6 md:px-12">
-       
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+<section id="home" class="relative min-h-screen flex items-center pt-16 sm:pt-20 overflow-hidden bg-[#f8f9f7]">
+    <div class="absolute top-[-5%] left-[-5%] w-[60%] h-[40%] bg-linear-to-br from-[#a4b494]/15 to-transparent rounded-full blur-[80px] sm:blur-[120px] animate-pulse"></div>
+    
+    <div class="container mx-auto px-4 sm:px-6 md:px-12 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-12 lg:gap-16 items-center">
 
-            <div class="z-10 order-2 lg:order-1 text-center lg:text-left">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#a4b494]/10 border border-[#a4b494]/20 mb-8 animate-fade-in">
+            <div class="order-1 text-center lg:text-left mt-4 sm:mt-8 lg:mt-0">
+                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/40 backdrop-blur-md border border-white/40 mb-6 animate-fade-in opacity-0 shadow-sm" style="animation-fill-mode: forwards;">
                   <i class="fa-solid fa-earth-asia text-[#4b5d3f] text-xs"></i>
-                  <span class="text-[10px] font-black uppercase tracking-[0.2em] text-[#4b5d3f]">Infrastruktur 2026</span>
+                  <span class="text-[9px] font-black uppercase tracking-[0.2em] text-[#4b5d3f]">Infrastruktur 2026</span>
                 </div>
 
-                <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter leading-[0.95] text-[#1a1c19] mb-8">
+                <h1 class="text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-black tracking-tighter leading-[0.9] text-[#1a1c19] mb-6 animate-slide-up opacity-0" style="animation-delay: 0.2s; animation-fill-mode: forwards;">
                     Future <br>
-                    <span class="bg-linear-to-r from-[#4b5d3f] to-[#a4b494] bg-clip-text text-transparent">
+                    <span class="bg-linear-to-r from-[#4b5d3f] via-[#a4b494] to-[#4b5d3f] bg-clip-text text-transparent bg-[length:200%_auto] animate-gradient-flow">
                         Solutions
                     </span>
                     <br> For Earth.
                 </h1>
 
-                <p class="max-w-md mx-auto lg:mx-0 text-gray-500 text-lg md:text-xl leading-relaxed mb-10 font-medium">
+                <p class="max-w-md mx-auto lg:mx-0 text-gray-500 text-sm sm:text-lg md:text-xl leading-relaxed mb-8 font-medium animate-slide-up opacity-0" style="animation-delay: 0.4s; animation-fill-mode: forwards;">
                     Membangun harmoni antara arsitektur modern dan ekosistem alam. Solusi infrastruktur kami dirancang untuk masa depan yang lebih hijau.
                 </p>
 
-                <div class="flex flex-wrap justify-center lg:justify-start items-center gap-6">
-                    <a href="#smart-grid" class="bg-[#4b5d3f] hover:bg-[#a4b494] text-white px-10 py-5 rounded-full font-bold shadow-2xl shadow-matcha/30 transition-all hover:scale-105 active:scale-95">
-                     Explore More <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                <div class="flex flex-wrap justify-center lg:justify-start items-center gap-4 animate-slide-up opacity-0" style="animation-delay: 0.6s; animation-fill-mode: forwards;">
+                    <a href="#solutions" class="w-full sm:w-auto text-center bg-[#4b5d3f] hover:bg-[#1a1c19] text-white px-10 py-4 sm:px-12 sm:py-5 rounded-full font-bold shadow-xl shadow-[#4b5d3f]/20 transition-all hover:scale-105 active:scale-95 group overflow-hidden relative">
+                     <span class="relative z-10 text-sm sm:text-base">Explore More <i class="fa-solid fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i></span>
                     </a>
                 </div>
             </div> 
 
-            <div class="relative w-full h-87.5 md:h-125 lg:h-137.5 order-1 lg:order-2 flex items-center justify-center mb-12 lg:mb-0">
-                 <canvas id="three-canvas" class="w-full h-full outline-none z-10"></canvas>
-        
-                 <div class="absolute -bottom-5 left-0 lg:-left-5 bg-white p-6 md:p-8 rounded-4xl md:rounded-[2.5rem] shadow-2xl z-20 animate-float scale-75 md:scale-100">
-                    <div class="flex items-center gap-4">
-                        <div class="w-10 h-10 md:w-12 md:h-12 bg-[#F0F4EC] rounded-full flex items-center justify-center text-[#4B5D3F]">
-                            <i class="fa-solid fa-bolt text-lg"></i>
-                        </div>
-                        <div>
-                            <p class="text-[9px] font-bold text-gray-400 uppercase tracking-widest">Efficiency</p>
-                            <p class="text-lg md:text-xl font-black text-[#1A1C19]">98.4%</p>
-                        </div>
-                    </div>
+            <div class="relative w-full h-[280px] sm:h-[450px] lg:h-[600px] order-2 flex items-center justify-center mt-8 lg:mt-0" data-aos="zoom-in" data-aos-duration="1500">
+                 <div class="absolute inset-4 sm:inset-0 bg-white/20 backdrop-blur-3xl rounded-[3rem] sm:rounded-[4rem] border border-white/30 shadow-2xl overflow-hidden">
+                    <div class="absolute top-[-20%] left-[-20%] w-[60%] h-[60%] bg-[#a4b494]/20 rounded-full blur-[60px] sm:blur-[80px]"></div>
                  </div>
-            </div> 
 
+                 <canvas id="three-canvas" class="w-full h-full outline-none z-10 cursor-grab active:cursor-grabbing"></canvas>
+            </div> 
         </div> 
     </div>
 </section>
 
-<script is:inline src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.160.0/three.min.js"></script>
+<script>
+  import * as THREE from 'three';
 
-<script is:inline>
   function initChlorofyThree() {
     const canvas = document.querySelector('#three-canvas');
-    if (!canvas) return;
+    if (!canvas || (canvas as any)._initialized) return;
+    (canvas as any)._initialized = true;
 
     const scene = new THREE.Scene();
     const camera = new THREE.PerspectiveCamera(
@@ -72,11 +65,13 @@
     renderer.setSize(canvas.clientWidth, canvas.clientHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
 
-    const geometry = new THREE.IcosahedronGeometry(2, 1);
+    const geometry = new THREE.IcosahedronGeometry(2, 2);
     
     const wireMaterial = new THREE.MeshStandardMaterial({ 
       color: 0x4B5D3F, 
-      wireframe: true 
+      wireframe: true,
+      transparent: true,
+      opacity: 0.8
     });
     const wireMesh = new THREE.Mesh(geometry, wireMaterial);
     scene.add(wireMesh);
@@ -84,50 +79,94 @@
     const coreMaterial = new THREE.MeshStandardMaterial({ 
       color: 0xA4B494, 
       transparent: true,
-      opacity: 0.2
+      opacity: 0.3,
+      roughness: 0.2,
+      metalness: 0.8
     });
     const coreMesh = new THREE.Mesh(geometry, coreMaterial);
-    coreMesh.scale.set(0.9, 0.9, 0.9);
+    coreMesh.scale.set(0.95, 0.95, 0.95);
     scene.add(coreMesh);
 
-    const mainLight = new THREE.DirectionalLight(0xffffff, 2);
-    mainLight.position.set(1, 1, 5);
+    const mainLight = new THREE.DirectionalLight(0xffffff, 3);
+    mainLight.position.set(5, 5, 5);
     scene.add(mainLight);
 
-    const ambientLight = new THREE.AmbientLight(0xffffff, 1);
+    const fillLight = new THREE.PointLight(0xa4b494, 2);
+    fillLight.position.set(-5, -5, 2);
+    scene.add(fillLight);
+
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.5);
     scene.add(ambientLight);
+
+    let mouseX = 0;
+    let mouseY = 0;
+    let targetX = 0;
+    let targetY = 0;
+
+    const onMouseMove = (event: MouseEvent) => {
+      mouseX = (event.clientX - window.innerWidth / 2) / 100;
+      mouseY = (event.clientY - window.innerHeight / 2) / 100;
+    };
+
+    window.addEventListener('mousemove', onMouseMove);
 
     function animate() {
       requestAnimationFrame(animate);
 
-      wireMesh.rotation.y += 0.003;
-      wireMesh.rotation.x += 0.002;
+      targetX = mouseX * 0.5;
+      targetY = mouseY * 0.5;
+
+      wireMesh.rotation.y += 0.003 + (targetX - wireMesh.rotation.y) * 0.05;
+      wireMesh.rotation.x += 0.002 + (targetY - wireMesh.rotation.x) * 0.05;
       
       coreMesh.rotation.y -= 0.002;
+      coreMesh.rotation.z += 0.001;
 
       renderer.render(scene, camera);
     }
 
     animate();
 
-    window.addEventListener('resize', () => {
-      camera.aspect = canvas.clientWidth / canvas.clientHeight;
+    const handleResize = () => {
+      const width = canvas.clientWidth;
+      const height = canvas.clientHeight;
+      camera.aspect = width / height;
       camera.updateProjectionMatrix();
-      renderer.setSize(canvas.clientWidth, canvas.clientHeight);
-    });
+      renderer.setSize(width, height);
+    };
+
+    window.addEventListener('resize', handleResize);
   }
 
   document.addEventListener('DOMContentLoaded', initChlorofyThree);
-  
   document.addEventListener('astro:page-load', initChlorofyThree);
 </script>
 
 <style>
   @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-15px); }
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(2deg); }
   }
+  
+  @keyframes fade-in {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
   .animate-float {
-    animation: float 5s ease-in-out infinite;
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 1.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   }
 </style>

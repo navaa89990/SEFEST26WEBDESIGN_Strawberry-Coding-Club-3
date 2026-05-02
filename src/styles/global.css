@@ -1,2 +1,49 @@
 @import "tailwindcss";
+@import "./custom.scss";
 
+@theme {
+  --color-matcha: #a4b494;
+  --color-dark-green: #4b5d3f;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  @apply text-[#1a1c19] antialiased;
+}
+
+::selection {
+  @apply bg-[#a4b494]/30 text-[#4b5d3f];
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#f8f9f7];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#a4b494]/30 rounded-full border-4 border-transparent bg-clip-padding hover:bg-[#a4b494]/50 transition-colors;
+}
+
+.nav-active {
+  @apply bg-white/5 backdrop-blur-lg py-4!;
+}
+
+@keyframes gradient-flow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-gradient-flow {
+  animation: gradient-flow 6s ease infinite;
+}
+
+.active-link {
+  @apply text-[#4b5d3f] bg-white/60 backdrop-blur-[20px] saturate-[180%] shadow-[0_8px_32px_0_rgba(75,93,63,0.1)] rounded-2xl px-5 py-2.5;
+}
